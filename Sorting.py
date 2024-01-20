@@ -7,9 +7,9 @@ def bubble_sort(arr):
         j=0
         while j<len(arr)-i-1:
             if arr[j]>arr[j+1]:
-                gecici=arr[j+1]
+                temp=arr[j+1]
                 arr[j+1]=arr[j]
-                arr[j]=gecici
+                arr[j]=temp
             j=j+1
         i=i+1
     return arr
@@ -24,9 +24,9 @@ def selection_sort(arr):
          for j in range(ind+1,size):
               if arr[j]<arr[min_index]:
                    min_index=j
-         gecici=arr[ind]
+         temp=arr[ind]
          arr[ind]=arr[min_index]
-         arr[min_index]=gecici
+         arr[min_index]=temp
          
     return arr
 
